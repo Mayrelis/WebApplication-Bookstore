@@ -1,0 +1,15 @@
+{% extends "bookstore/base.html" %}
+{% block title %}Checkout | {{ block.super }}{% endblock %}
+{% load static from staticfiles %}
+
+{% comment %} {% block content %}
+    <h1>New comment</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Write Review</button>
+    </form>
+    
+    </div>
+
+
+{% endblock %}
